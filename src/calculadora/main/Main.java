@@ -1,5 +1,6 @@
 package calculadora.main;
 
+import java.util.List;
 //import java.util.List;
 import java.util.Scanner;
 
@@ -73,6 +74,11 @@ public class Main {
 				System.out.println("Divisao: " + divisao);
 				break;
 			case 5:
+				List<String> operations = calcular.getLastOperations();
+				System.out.println("Operacoes realizadas");
+				for(String operation : operations) {
+					System.out.println(operation);
+				}
 				System.out.println("Saindo...");
 			}
 			
